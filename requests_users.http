@@ -2,24 +2,24 @@
 GET http://localhost:3000/users.json
 
 ###User Show
-GET http://localhost:3000/users/
+GET http://localhost:3000/users/1.json
 
 ###User Create
-POST http://localhost:3000/users
+POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "First"
+  "name": "Third"
 }
 
 ###User Update
-PATCH http://localhost:3000/users/
+PATCH http://localhost:3000/users/2.json
 Content-Type: application/json
 
 {
-  "name": ""
+  "name": "Numba 2"
 }
 
 ###User Delete
-DELETE http://localhost:3000/users/
+DELETE http://localhost:3000/users/3.json
 

@@ -26,11 +26,11 @@ class UsersController < ApplicationController
 
   def update
     user_id = params[:id]
-    @user = User.find_by(id: movie_id)
+    @user = User.find_by(id: user_id)
 
     @user.name = params[:name] 
 
-    if user.save
+    if @user.save
       render :show
     else
       render json: {errors: @user.error.full_messages},
