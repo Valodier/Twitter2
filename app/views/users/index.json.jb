@@ -2,6 +2,7 @@
   {
     id: user.id,
     name:user.name
+    followers: user.followers
 
   }
 end
